@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
+/* Primary */
+
+:root{
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%);
+
+
+    --darkMode: black;
+    
+
+/* ### Neutral */
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body{
+    background-color: #fff;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.darktheme{
+    background-color: var(--darkMode);
+    color: #fff;
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin-top: 20px;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    color: var(--Very-dark-blue);
+    font-size: 20px;
+    display: none;
+}
+
+.navlist{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    list-style: none;
+}
+
+.nav-link a{
+    color: var(--Dark-grayish-blue);
+    text-decoration: none;
+
+}
+
+.nav-link a:hover{
+    color: var(--softRed);
+}
+
+.logo{
+    width: 60px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.contents{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.biggerContent{
+    width: 63%;
+}
+
+.imageSection{
+
+}
+
+.image-main{
+    width: 100%;
+}
+
+.textSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    width: 47%;
+    font-size: 1.2rem;
+}
+
+.title h1{
+}
+
+.description{
+    width: 47%;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.description button{
+    width: 150px;
+    height: 40px;
+    background-color: var(--softRed);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.smallerContent{
+    width: 35%;
+    background-color: var(--Very-dark-blue);
+}
+
+.smallerContent h1{
+    color: var(--softOrange);
+    padding: 15px 15px 0px;
+    margin: 0;
+}
+
+.smallerContent .newsList{
+    width: 87%;
+    margin: auto;
+    margin: 0 auto;
+    padding: 2px 0;
+    
+}
+
+.smallerContent .newsList:hover h3{
+    color: var(--softOrange);
+}
+
+
+.smallerContent .newNews{
+    border-bottom: 1px solid var(--Off-white);
+
+}
+
+
+.smallerContent .newsList h3{
+    color: var(--Off-white);
+    font-size: 15px;
+}
+
+.smallerContent .newsList p{
+    color: var(--Grayish-blue);
+}
+
+
+.stepContent{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30PX;
+}
+
+.step{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step:hover .stepText h3{
+    color: var(--softRed);
+}
+
+.stepImg{
+    width: 30%;
+}
+
+.step-Image{
+    width: 100%;
+}
+
+.stepText{
+    width: 70%;
+    padding: 5px;
+}
+
+.stepText h1{
+    color: var(--Grayish-blue);
+    margin: 0px;
+
+}
+
+.stepText h3{
+    margin: 5px 0px;
+    font-size: 13px;
+}
+
+.stepText P{
+    margin: 5px 0px;
+    font-size: 12px;
+}
+
+
+
+/* MOBILE DESIGN
+ */
+
+@media only screen and (max-width:375px) {
+    .navbar{
+        width: 90%;
+        padding: 15px 0;
+        display: block;
+    }
+
+    .logo{
+        width: 30px;
+    }
+
+    .icon{
+        display: block;
+        position: absolute;
+        right: 26px;
+        top: 20px;
+    }
+
+    .navlist{
+        background-color: rgb(230, 230, 230);
+        display: none;
+        margin-top: 15px;
+        width: 97%;
+        padding-left: 10px;
+        transition-timing-function: linear;
+
+    }
+
+    .nav-link{
+        padding: 15px;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .contents{
+        width: 100%;
+        display: block;
+    }
+
+    .biggerContent{
+        width: 100%;
+    }
+
+
+
+    .image-main{
+        content: url(/news-homepage-main/assets/images/image-web-3-mobile.jpg);
+    }
+
+    .textSection{
+        width: 100%;
+        display: block;
+    }
+    
+    .title{
+        width: 100%;
+    }
+    
+    .description{
+        width: 100%;
+    }
+
+    .smallerContent{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .stepContent{
+        width: 90%;
+        margin: auto;
+        display: block;
+        margin-top: 30PX;
+    }
+
+    .step{
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+}

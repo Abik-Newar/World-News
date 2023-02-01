@@ -227,7 +227,7 @@ body{
 /* MOBILE DESIGN
  */
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:425px) {
     .navbar{
         width: 90%;
         padding: 15px 0;
